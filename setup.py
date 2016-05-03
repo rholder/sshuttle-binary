@@ -5,7 +5,7 @@ with open('requirements.txt') as file_requirements:
 
 setup(
     name='sshuttle',
-    version='0.77.2',
+    version='0.78.0',
     packages=find_packages(),
     install_requires=requirements,
 )

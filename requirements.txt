@@ -1,1 +1,1 @@
-sshuttle==0.77.2
+sshuttle==0.78.0

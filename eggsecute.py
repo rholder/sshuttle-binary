@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-## Copyright 2016 Ray Holder
+## Copyright 2016-2019 Ray Holder
 ##
 ## Licensed under the Apache License, Version 2.0 (the "License");
 ## you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ def main(script_path, output_path):
 
     # tack Python header onto a file, zip file parsers ignore everything up until PK magic string
     outfile = open(output_path, 'w+b')
-    outfile.write(b"#!/usr/bin/env python\n")
+    outfile.write(b"#!/usr/bin/env python3\n")
 
     # make sure we flush, since we'll be writing zip data right after this
     outfile.flush()

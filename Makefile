@@ -1,7 +1,7 @@
 PYTHON_MAIN=bootstrap.py
 FINAL_EXECUTABLE=sshuttle
 BUILD_DIR=build
-PYTHON_INTERPRETER=python
+PYTHON_INTERPRETER=python3
 
 .PHONY: all clean build
 
@@ -26,5 +26,5 @@ build/_virtualenv:
 		echo "Existing virtualenv found. Skipping virtualenv creation."; \
 	else \
 		virtualenv -p `which $(PYTHON_INTERPRETER)` $(BUILD_DIR)/_virtualenv; \
-		sh -c '. $(BUILD_DIR)/_virtualenv/bin/activate; pip install .'; \
+		sh -c '. $(BUILD_DIR)/_virtualenv/bin/activate; pip install sshuttle==0.78.5; pip install .'; \
 	fi

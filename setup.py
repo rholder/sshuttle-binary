@@ -4,8 +4,8 @@ with open('requirements.txt') as file_requirements:
     requirements = file_requirements.read().splitlines()
 
 setup(
-    name='sshuttle',
-    version='0.78.0',
+    name='sshuttle-binary',
+    version='0.78.5',
     packages=find_packages(),
     install_requires=requirements,
 )

@@ -26,5 +26,5 @@ build/_virtualenv:
 		echo "Existing virtualenv found. Skipping virtualenv creation."; \
 	else \
 		virtualenv -p `which $(PYTHON_INTERPRETER)` $(BUILD_DIR)/_virtualenv; \
-		sh -c '. $(BUILD_DIR)/_virtualenv/bin/activate; pip install sshuttle==0.78.5; pip install .'; \
+		sh -c '. $(BUILD_DIR)/_virtualenv/bin/activate; pip install .'; \
 	fi

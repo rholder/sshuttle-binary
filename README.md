@@ -19,7 +19,7 @@ It works the same on OSX and Linux. I've personally tested it on Debian 8,
 Ubuntu 14.04 LTS, and OSX 10.10/10.11. They all seemed to work. You can grab the
 latest version and set it executable with something like this:
 ```bash
-sudo curl -o /usr/local/bin/sshuttle -L "https://github.com/rholder/sshuttle-binary/releases/download/v0.78.0/sshuttle" && \
+sudo curl -o /usr/local/bin/sshuttle -L "https://github.com/rholder/sshuttle-binary/releases/download/v0.78.5/sshuttle" && \
 sudo chmod +x /usr/local/bin/sshuttle
 ```
 
